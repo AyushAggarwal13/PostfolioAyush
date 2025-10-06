@@ -1,0 +1,153 @@
+{
+  "name": "Ayush Aggarwal",
+  "tagline": "Full Stack MERN Developer | Creative Coder | UI Enthusiast",
+  "bio": "💻 I’m a B.Tech Computer Science student (Batch of 2023–2027) with a strong interest in full-stack development, problem-solving, and creating impactful tech solutions.⚡ Skilled in Node.js, JavaScript, HTML, CSS, Java, and SQL, I enjoy turning ideas into working applications and continuously improving my technical expertise.🚀 In 2024, I participated in a hackathon where my team of 4 secured a Top 10 position by developing POAPify– an attendance protocol project that demonstrated innovation, collaboration, and real-world problem-solving.🌱 I am eager to grow as a developer by exploring advanced technologies, contributing to projects, and collaborating with like-minded peers in tech communities.🔗 Open to opportunities in internships, hackathons, and collaborations where I can apply my skills, learn from industry experts, and make a meaningful contribution.",
+  "image": "/Ayush.jpg",
+  "resumeUrl": "/Ayush_Aggarwal_Resume.pdf",
+  "education": {
+    "institution": "Chitkara University",
+    "degree": "B.Tech in Computer Science Engineering",
+    "year": "3rd Year",
+    "duration": "2022 - 2026"
+  },
+  "skills": {
+    "frontend": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
+    "backend": ["Node.js", "Express", "MongoDB", "REST APIs"],
+    "tools": ["Git", "VS Code", "Postman", "Figma"]
+  },
+  "stats": {
+    "projectsCompleted": 20,
+    "hackathonsParticipated": 10,
+    "certificationsEarned": 8
+  },
+  "gallery": [
+    {
+      "image": "/aa.jpg",
+      "title": "Tech Hackathon 2024",
+      "description": "Won first place in college hackathon"
+    },
+    {
+      "image": "/bb.jpg",
+      "title": "Project Demo Day",
+      "description": "Presenting final year project"
+    },
+    {
+      "image": "/cc.jpg",
+      "title": "Coding Competition",
+      "description": "Competitive programming event"
+    },
+    {
+      "image": "/Ayush.jpg",
+      "title": "Team Collaboration",
+      "description": "Working with team on major project"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Dr. Rahul Sharma",
+      "role": "Professor, Chitkara University",
+      "content": "Exceptional problem-solving skills and dedication to learning. One of the most talented students I've mentored.",
+      "avatar": "/placeholder.svg"
+    },
+    {
+      "name": "Priya Mehta",
+      "role": "Team Lead, Tech Startup",
+      "content": "Great team player with strong technical skills. Delivered quality work consistently during the internship.",
+      "avatar": "/placeholder.svg"
+    },
+    {
+      "name": "Arjun Patel",
+      "role": "Fellow Developer",
+      "content": "Amazing collaborator! Always brings innovative solutions and helps the team grow together.",
+      "avatar": "/placeholder.svg"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "Building Scalable MERN Applications",
+      "excerpt": "Learn how to structure and optimize full-stack MERN applications for production environments.",
+      "date": "2024-12-15",
+      "readTime": "5 min read",
+      "tags": ["MERN", "Backend", "Architecture"]
+    },
+    {
+      "title": "My First Hackathon Experience",
+      "excerpt": "Sharing insights and lessons learned from participating in my first college hackathon.",
+      "date": "2024-11-20",
+      "readTime": "4 min read",
+      "tags": ["Hackathon", "Experience", "Learning"]
+    },
+    {
+      "title": "Mastering React Hooks",
+      "excerpt": "Deep dive into React hooks and how to use them effectively in modern applications.",
+      "date": "2024-10-10",
+      "readTime": "6 min read",
+      "tags": ["React", "Frontend", "Tutorial"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack MERN application with real-time cart updates, secure payment integration, and admin dashboard.",
+      "techStack": ["React", "Node.js", "MongoDB", "Stripe"],
+      "github": "https://github.com/yourusername/project1",
+      "live": "https://project1.demo.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "title": "Task Management App",
+      "description": "Collaborative task manager with drag-and-drop interface, real-time updates, and team workspaces.",
+      "techStack": ["React", "Express", "Socket.io", "MongoDB"],
+      "github": "https://github.com/yourusername/project2",
+      "live": "https://project2.demo.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "title": "Portfolio CMS",
+      "description": "Content management system for developers to showcase their work with customizable themes.",
+      "techStack": ["React", "Node.js", "MongoDB", "Cloudinary"],
+      "github": "https://www.linkedin.com/in/ayush-aggarwal-587181292/",
+      "live": "https://project3.demo.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "Real-time weather application with beautiful UI and location-based forecasts.",
+      "techStack": ["React", "OpenWeather API", "Chart.js"],
+      "github": "https://github.com/yourusername/project4",
+      "live": "https://project4.demo.com",
+      "image": "/placeholder.svg"
+    },
+    {
+      "title": "Chat Application",
+      "description": "Real-time messaging app with group chats, file sharing, and emoji support.",
+      "techStack": ["React", "Socket.io", "Node.js", "MongoDB"],
+      "github": "https://github.com/yourusername/project5",
+      "live": "https://project5.demo.com",
+      "image": "/placeholder.svg"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Full Stack Developer Intern",
+      "company": "Tech Company",
+      "duration": "Jun 2024 - Present",
+      "description": "Developed REST APIs and responsive UI components for production applications."
+    },
+    {
+      "role": "Web Development Lead",
+      "company": "College Tech Club",
+      "duration": "Jan 2023 - May 2024",
+      "description": "Led team of 5 developers in building college event management platform."
+    }
+  ],
+  "contact": {
+    "email": "ayushagarwal11331@gmail.com",
+    "github": "https://github.com/AyushAggarwal13",
+    "linkedin": "https://www.linkedin.com/in/ayush-aggarwal-587181292/",
+    "twitter": "https://twitter.com/yourusername"
+  },
+  "footer": {
+    "quote": "Code. Create. Innovate. Repeat."
+  }
+}

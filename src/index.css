@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+    
+    /* Custom portfolio colors */
+    --gradient-start: 262 83% 58%;
+    --gradient-end: 217 91% 60%;
+    --glass-bg: 0 0% 100%;
+    --glass-border: 214.3 31.8% 91.4%;
+    --glow: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 6%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 6%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 223 47% 11%;
+    --input: 223 47% 11%;
+    --ring: 262 83% 58%;
+    
+    /* Custom portfolio colors - dark mode */
+    --gradient-start: 262 83% 58%;
+    --gradient-end: 217 91% 60%;
+    --glass-bg: 224 71% 6%;
+    --glass-border: 223 47% 11%;
+    --glow: 262 83% 70%;
+  }
+}
+
+/* Custom gradient utilities */
+.gradient-primary {
+  background: linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-effect {
+  background: hsl(var(--glass-bg) / 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(var(--glass-border) / 0.2);
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px hsl(var(--glow) / 0.3),
+              0 0 40px hsl(var(--glow) / 0.2),
+              0 0 60px hsl(var(--glow) / 0.1);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px hsl(var(--glow) / 0.5),
+               0 0 40px hsl(var(--glow) / 0.3);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
