@@ -22,17 +22,17 @@
   },
   "gallery": [
     {
-      "image": "/aa.jpg",
+      "image": "/Ayush.jpg",
       "title": "Tech Hackathon 2024",
       "description": "Won first place in college hackathon"
     },
     {
-      "image": "/bb.jpg",
+      "image": "/Ayush.jpg",
       "title": "Project Demo Day",
       "description": "Presenting final year project"
     },
     {
-      "image": "/cc.jpg",
+      "image": "/Ayush.jpg",
       "title": "Coding Competition",
       "description": "Competitive programming event"
     },
