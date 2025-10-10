@@ -3,6 +3,7 @@ import { Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import portfolioData from "@/data/portfolio.json";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -13,21 +14,6 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission (replace with actual API call when backend is ready)
-    setTimeout(() => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -35,6 +21,42 @@ const Contact = () => {
       ...prev,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const result = await emailjs.send(
+        "service_c74t2mh", // replace with your EmailJS service ID
+        "template_yt16mlm",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "QAIIzTKKWDGG1hAKY" // replace with your EmailJS public key
+      );
+
+      if (result.text === "OK") {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Email sending failed");
+      }
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast({
+        title: "Error sending message",
+        description: "Something went wrong. Please try again later.",
+      });
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -74,10 +96,7 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
                 </label>
                 <input
@@ -93,10 +112,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="email" className="block text-sm font-medium mb-2">
                   Email
                 </label>
                 <input
@@ -112,10 +128,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
                 </label>
                 <textarea
